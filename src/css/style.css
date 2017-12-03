@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main_content {
+    display: flex;
+}
+
+.recipe {
+    background-color: aliceblue;
+    min-height: 500px;
+    padding: 15px;
+}
+
+.recipe_list {
+    padding-left: 10px;
+}
+
+.recipe_list li {
+    padding-left: 7px;
+}
+
+.form {
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    width: 40%;
+}
+
+.form input, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gold;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form_item {
+    margin-bottom: 20px;
+}
+
+.recipeform {
+    position: absolute;
+    z-index: 100;
+    width: 200%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.recipe_form-enter {
+    transform: translateX(100%);
+}
+
+.recipe_form-enter.recipe_form-enter-active {
+    transform: translateX(0);
+    transition: 0.5s ease;
+}
+
+.recipe_form-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.recipe_form-leave.recipe_form-leave-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+}
+
+/*.recipeform-appear {
+    opacity: 0;
+}
+
+.recipeform-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}*/
+
+.recipeitem-enter {
+    opacity: 0.01;
+}
+
+.recipeitem-enter.recipeitem-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.recipeitem-leave {
+    opacity: 1;
+
+}
+
+.recipeitem-leave.recipeitem-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.recipeEdit {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
